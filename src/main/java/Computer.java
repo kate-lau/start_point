@@ -20,6 +20,7 @@ public class Computer {
 
     // Method: get Storage
     public int getStorage(){
+
         return this.storage;
     }
     // Method: get Printer
@@ -28,13 +29,13 @@ public class Computer {
     }
 
     // Method: set Printer
-    public void setPrinter(String printer){
+    public void setPrinter(String printer){ // void means we're not returning anything, and you can only return a string.
         this.printer = printer;
     }
 
     // Method print Message if Printer
     public void printMessage(String yesPrinterMessage){
-        if (this.printer != null){
+        if (this.printer != ""){
             System.out.println(yesPrinterMessage);
         }
         else;

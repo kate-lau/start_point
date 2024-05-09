@@ -28,7 +28,7 @@ public class Runner {
         System.out.println("Running computer tasks...");
 
         // 1. Create a new computer object
-        Computer computer = new Computer(250, "MacBook", null , 20); // <INSTANTIATE A NEW COMPUTER OBJECT HERE>
+        Computer computer = new Computer(250, "MacBook", "", 20); // <INSTANTIATE A NEW COMPUTER OBJECT HERE>
 
         // 2. Use a getter to find out how much storage the computer has
           int currentStorage = computer.getStorage(); // <CALL YOUR METHOD HERE>;
@@ -69,6 +69,25 @@ public class Runner {
 //        boolean itemInTrolley = <CALL YOUR METHOD HERE>;
 //        System.out.println("Object is a square (true/false): " + itemInTrolley);
     }
+    public static void shoppingTrolleyDemo(){
+        System.out.println("----------");
+        System.out.println("Running shopping trolley tasks...");
 
+        // 1. Create a new shopping trolley
+        ShoppingTrolley trolley = new ShoppingTrolley();
+
+        // 2. Add an item to the trolley
+        trolley.addItem("milk");
+
+        // 3. Count items in the trolley
+        int itemCount = trolley.countItemsInTrolley();
+        System.out.println("The trolley contains " + itemCount + " items.");
+
+        // 4. Check if an item is in the trolley
+        boolean itemInTrolley = trolley.checkIfItemInTrolley("milk");
+        System.out.println("Trolley contains item (true/false): " + itemInTrolley);
+    }
+    
+}
 
 }
